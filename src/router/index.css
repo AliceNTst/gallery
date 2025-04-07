@@ -1,0 +1,15 @@
+/* html, body {
+    height: auto; 
+    overflow-x: hidden;
+  } */
+
+#smooth-wrapper {
+    overflow: hidden; /* Ensures smooth scrolling works correctly */
+}
+  
+#smooth-content {
+     min-height: 200vh;
+    /* background-color: brown; */
+    height: auto;  /* Makes the container expand automatically with content */
+    will-change: transform; /* Helps optimize scroll performance */
+}
