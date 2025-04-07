@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
 import gsap from "gsap";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";

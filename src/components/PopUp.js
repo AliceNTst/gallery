@@ -14,7 +14,7 @@ const PopUp = ({storeCollectionReference, dbCollectionReference}) => {
     const [isOpen, setOpen] = useState(false);
     const [loading, setLoading] = useState(false); 
     const [imageUpload, setImageUpload] = useState(null);
-    const user = auth.currentUser;
+    // const user = auth.currentUser;
 
     const toggleOpen = () => {
         setOpen(!isOpen);

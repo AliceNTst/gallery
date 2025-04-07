@@ -1,7 +1,4 @@
 import {useState, useEffect} from 'react';
-import {storage} from './firebase/firebase';
-import {ref, uploadBytes, getDownloadURL, listAll} from 'firebase/storage';
-import {v4} from 'uuid';
 import {db} from './firebase/firebase';
 import {collection, getDocs} from 'firebase/firestore';
 import './LoadImages2.css';

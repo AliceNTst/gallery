@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { app } from '../components/firebase/firebase'
-import UploadImages2 from '../components/UploadImages2';
-import Auth_mine from '../components/Auth_mine';
 import LoadImages2 from '../components/LoadImages2';
 import PopUp from '../components/PopUp';
 import TagLine from '../components/TagLine';
