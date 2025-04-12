@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 import {storage} from './firebase/firebase';
 import {ref, uploadBytes, getDownloadURL} from 'firebase/storage';
 import {v4} from 'uuid';
@@ -7,9 +7,12 @@ import {collection, addDoc} from 'firebase/firestore';
 import {auth} from './firebase/firebase';
 import '../css/PopUp.css';
 import TagLine from './TagLine.js';
+import { UserContext } from '../UserContainer';
 
 
 const PopUp = ({storeCollectionReference, dbCollectionReference}) => {
+    const [user, setUser] = useContext(UserContext);
+
     const [tags, setTags] = useState([]);
     const [isOpen, setOpen] = useState(false);
     const [loading, setLoading] = useState(false); 
@@ -61,7 +64,7 @@ const PopUp = ({storeCollectionReference, dbCollectionReference}) => {
 
     return (
         <div>
-            
+            {user ? (
             <button onClick={toggleOpen}>
                 <svg
                     aria-hidden="true"
@@ -87,7 +90,8 @@ const PopUp = ({storeCollectionReference, dbCollectionReference}) => {
                     ></path>
                 </svg>
                 ADD IMAGE
-            </button>
+            </button>) : (<div></div>)
+            }
 
             {isOpen && (
                  <div className="modal">

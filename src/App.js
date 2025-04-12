@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import './App.css';
 import Router from './router';
 import Navbar from './components/Navbar';
+import { UserProvider } from './UserContainer';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -12,8 +13,10 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 function App() {
   return (
     <>
+    <UserProvider>
       <Navbar />
       <Router />
+    </UserProvider>
     </>
   );
 }
