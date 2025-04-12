@@ -2,3 +2,8 @@ li a {
     text-decoration: none;
     color: inherit; /* Optional: makes the color inherit from its parent */
   }
+
+.button-wrapper{
+  display: inline-block; /* Ensures the wrapper behaves like a button */
+  transform: scale(0.8); 
+}

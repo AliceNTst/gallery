@@ -1,9 +1,11 @@
 import React from 'react';
 import '../css/about.css'
 import about_img from '../img/bat.PNG';
+import LoginButton from '../components/LoginButton';
 
 const HomePage = () => {
   return (
+    <div>
     <div className='about'>
         <div className='about-img-body'>
             <img src={about_img} alt="" class="about-img"/>
@@ -18,6 +20,8 @@ const HomePage = () => {
             Вона також захоплюється фотографією і використовує власні фотографії для створення своїх картин. Оскільки кількість референсів в її арсеналі постійно зростає, виникла потреба у створенні місця для їх зберігання та сортування. Так і був створений цей сайт.
             </p>
         </div>
+    </div>
+      {/* <LoginButton/> */}
     </div>
   );
 };
