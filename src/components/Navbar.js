@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { auth } from '../components/firebase/firebase';
 //import { doSignOut } from './firebase/auth';
 import './Navbar.css';
-import LoginButton from '../components/LoginButton';
+import Login from '../components/Login';
 
 
 export default function Header() {
@@ -36,7 +36,8 @@ export default function Header() {
       </li>
       <ul className={enableMenu ? 'active' : ''}>
         <div class='button-wrapper'>
-        <LoginButton/></div>
+          <Login/>
+        </div>
         <li>
           <Link to="/">ГОЛОВНА</Link>
         </li>

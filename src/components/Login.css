@@ -1,0 +1,12 @@
+.logged-in-panel-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.logout-button-wrapper{
+    display: inline-block; /* Ensures the wrapper behaves like a button */
+    transform: scale(0.8); 
+    padding-bottom: 10px;
+  }
