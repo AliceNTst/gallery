@@ -8,6 +8,7 @@ import {auth} from './firebase/firebase';
 import '../css/PopUp.css';
 import TagLine from './TagLine.js';
 import { UserContext } from '../UserContainer';
+import Loader from './Loader.js';
 
 
 const PopUp = ({storeCollectionReference, dbCollectionReference}) => {
@@ -120,7 +121,7 @@ const PopUp = ({storeCollectionReference, dbCollectionReference}) => {
                         <button className="close-modal" onClick={closePopup}>
                             X
                         </button>
-                        {loading && <div className="loader">Loading...</div>}
+                        {loading && <Loader loaderText="Loading..."/>}
                    </div>
                  </div>
             )}

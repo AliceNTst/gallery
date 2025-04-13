@@ -48,9 +48,10 @@ const Login = () => {
           <div class='logout-button-wrapper'>
             <LoginButton onClick={logout} svgPath={outwardArrowPath} buttonText="Logout"/>
           </div>
-          <p>Welcome!</p>
-          <p>{user.displayName}</p>
-          {/* <button onClick={logout}>Logout</button> */}
+          <div class="logout-text-wrapper">
+            <p>Welcome!</p>
+            <p>{user.displayName}</p>
+          </div>
         </div>
       )}
       </div>

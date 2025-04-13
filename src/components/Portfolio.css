@@ -49,9 +49,6 @@
     margin-bottom: 2em;
     min-height: 20em;
     width: 100%;  /* Full width */
-    /* gap: 20px;  */
-    /* padding-left: 30em;
-    padding-right: 30em; */
     background: var(--color-3, none) ; 
     flex-wrap: wrap;
 }

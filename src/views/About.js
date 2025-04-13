@@ -2,8 +2,12 @@ import React from 'react';
 import '../css/about.css'
 import about_img from '../img/bat.PNG';
 import LoginButton from '../components/LoginButton';
+import Loader from '../components/Loader.js';
+import Particles from "react-tsparticles";
+
 
 const HomePage = () => {
+
   return (
     <div>
     <div className='about'>
@@ -22,6 +26,7 @@ const HomePage = () => {
         </div>
     </div>
       {/* <LoginButton/> */}
+      <Loader/>
     </div>
   );
 };
