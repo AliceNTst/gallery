@@ -26,7 +26,7 @@ const HomePage = () => {
         </div>
     </div>
       {/* <LoginButton/> */}
-      <Loader/>
+      {/* <Loader/> */}
     </div>
   );
 };

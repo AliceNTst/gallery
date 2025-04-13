@@ -14,12 +14,24 @@ const Portfolio = () => {
         <div className="title">
           <p>Галерея Напрацювань</p>
         </div></div></div>
+
+        {/* <div className="header-container">
+          <div className="text-container left">
+              <div className="text-paragraph left">
+                  <p> Цей сайт — це портфоліо та творча платформа, де можна ознайомитися з моїми роботами та знайти натхнення. На головній сторінці представлені вибрані роботи, а меню праворуч веде до розділів Галерея та Референси.
+
+У Галереї ви знайдете розширену добірку робіт, а також процеси їх створення. У розділі Референси — підбірка фотографій, які можуть надихнути на створення власного мистецтва.
+
+Зареєстровані користувачі можуть входити в акаунт і додавати власні зображення. У Галереї та Референсах є система тегів, яка допомагає зручно фільтрувати зображення за темами.</p>
+              </div>
+            </div>
+        </div> */}
+
         <div className="header-container">
           <div className="text-container left">
               <div className="text-paragraph left">
-                  <p>1 Ich bin eine Künstlerin, geboren in der Ukraine und ansässig in Deutschland, mit einem Fokus auf Öl- und digitale Malerei. 
-                  Mein Stil verbindet Elemente des Impressionismus und Realismus, wobei ich besonderen Wert darauf lege,
-                  meine Motive sowohl erkennbar als auch lebendig in einer traumhaften Weise darzustellen.</p>
+                  <p> Працюю з олійним та цифровим живописом.
+                     Мій стиль поєднує елементи імпресіонізму та реалізму, з акцентом на впізнаваність і яскравість образів у мрійливій атмосфері.</p>
               </div>
             </div>
             <div className="image-container">
@@ -29,38 +41,37 @@ const Portfolio = () => {
             </div>
             <div className="text-container right">
               <div className="text-paragraph right">
-                  <p>2 Ich bin eine Künstlerin, geboren in der Ukraine und ansässig in Deutschland, mit einem Fokus auf Öl- und digitale Malerei. 
-                  Mein Stil verbindet Elemente des Impressionismus und Realismus, wobei ich besonderen Wert darauf lege,
-                  meine Motive sowohl erkennbar als auch lebendig in einer traumhaften Weise darzustellen.</p>
+                  <p>У своїй цифровій роботі я використовую Clip Studio Paint, поєднуючи традиційні техніки з сучасними — і навпаки.
+                     Вірю, що кожна техніка збагачує іншу та відкриває нові творчі можливості.</p>
               </div>
             </div>
         </div>
       
       <div class='about-site-text-container'>
           <p class='text-paragraph text-center'>
-            Welcome to Gallery! Here you will find various works in different mediums as well photography that can be used as references in different kinds of art.
+            Ласкаво просимо до Галереї! Тут ви знайдете різноманітні роботи в різних техніках, а також фотографії, які можна використовувати як референси для створення мистецтва.
             </p>
       </div>
 
       <div class='parallax'>
         <div class='works-text-container'>
             <p class='text-paragraph text-center small-header works'>
-              Kunstwerke
+              Роботи
             </p>
             <p class='text-paragraph text-center works'>
-            Oil & Digital
+            Олія & Цифровий живопис
             </p>
         </div>
       </div>
 
       <div class='colored-box'>
       <div class='work-images-container'>
-            {Object.entries(Images).map(([key, { src, alt }]) => (
+            {Object.entries(Images).map(([key, { src, alt, details }]) => (
               <div class='box'>
                 <img src={src} alt={alt} />
                 <div className="image-overlay">
                   <h3>{alt}</h3>
-                  <p>This is some extra info about the image.</p>
+                  <p>{details}</p>
               </div>
             </div>
             ))}
