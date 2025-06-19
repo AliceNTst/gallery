@@ -28,7 +28,7 @@
 {
     .container
     {
-        columns: 5;
+        columns: 2;
     }
 }
 @media (max-width: 1500px)
